@@ -1,4 +1,4 @@
-package com.somnath.spring.dao;
+package com.somnath.spring.orm.dao;
  
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

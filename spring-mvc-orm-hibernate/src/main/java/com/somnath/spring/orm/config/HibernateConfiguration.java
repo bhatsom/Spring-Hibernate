@@ -12,13 +12,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate4.HibernateTransactionManager;
-import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
  
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.somnath.spring.orm.configuration" })
+@ComponentScan({ "com.somnath.spring.orm.config" })
 @PropertySource(value = { "classpath:application.properties" })
 public class HibernateConfiguration {
  
@@ -29,7 +30,7 @@ public class HibernateConfiguration {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.somnath.spring.orm.model" });
+        sessionFactory.setPackagesToScan(new String[] { "com.somnath.spring.model" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
      }

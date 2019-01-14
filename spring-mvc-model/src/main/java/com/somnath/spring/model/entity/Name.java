@@ -1,4 +1,4 @@
-package com.somnath.spring.model;
+package com.somnath.spring.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -9,6 +9,7 @@ public class Name {
 	@Column(name = "FIRST_NAME", nullable = false)
 	public String firstName;
 
+	@Column(name = "MIDDLE_NAME", nullable = true)
 	public String middleName;
 
 	@Column(name = "LAST_NAME", nullable = false)

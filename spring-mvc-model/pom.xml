@@ -17,8 +17,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <hibernate.version>4.3.6.Final</hibernate.version>
-        <springframework.version>4.3.9.RELEASE</springframework.version>
+        <!--hibernate.version>4.3.6.Final</hibernate.version-->
+        <hibernate.version>5.3.7.Final</hibernate.version>
         <joda-time.version>2.3</joda-time.version>
     </properties>
 
@@ -39,11 +39,11 @@
         </dependency>
 
         <!-- To map JodaTime with database type -->
-        <dependency>
+        <!--dependency>
             <groupId>org.jadira.usertype</groupId>
             <artifactId>usertype.core</artifactId>
             <version>3.0.0.CR1</version>
-        </dependency>
+        </dependency-->
 
     </dependencies>
 

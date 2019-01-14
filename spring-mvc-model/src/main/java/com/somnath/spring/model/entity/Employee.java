@@ -1,11 +1,10 @@
-package com.somnath.spring.model;
+package com.somnath.spring.model.entity;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
 import javax.persistence.*;
 
-import org.hibernate.annotations.Type;
 import org.joda.time.LocalDate;
  
 @Entity
@@ -20,7 +19,7 @@ public class Employee {
     private Name name;
  
     @Column(name = "JOINING_DATE", nullable = false)
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
+    //@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
     private LocalDate joiningDate;
  
     @Column(name = "SALARY", nullable = false)

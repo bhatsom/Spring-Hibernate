@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.somnath.springmvc.controllers")
+@ComponentScan("com.somnath.spring.mvc.controllers")
 public class MyWebConfig extends WebMvcConfigurerAdapter {
 
 	@Bean

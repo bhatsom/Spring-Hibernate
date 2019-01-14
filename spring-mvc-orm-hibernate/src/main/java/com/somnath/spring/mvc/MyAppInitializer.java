@@ -1,7 +1,7 @@
-package com.somnath.spring.orm;
+package com.somnath.spring.mvc;
 
-import com.somnath.spring.mvc.rootconfig.MyRootConfig;
-import com.somnath.spring.mvc.webconfig.MyWebConfig;
+import com.somnath.spring.mvc.config.MyRootConfig;
+import com.somnath.spring.mvc.config.MyWebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /*

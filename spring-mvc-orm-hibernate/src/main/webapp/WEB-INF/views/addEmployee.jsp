@@ -14,7 +14,7 @@
                 <td style="font-style: italic; color: red;">${caption}</td>
             </tr>
         </table>
-        <form:form id="addEmployee" modelAttribute="addEmployee" action="addEmployee" method="post">
+        <form:form id="addEmployee" modelAttribute="employee" action="saveEmployee" method="post">
             <table align="center">
                 <tr>
                     <td><form:label path="firstName">First Name: </form:label></td>
@@ -45,8 +45,7 @@
                 <tr></tr>
                 <tr>
                     <td></td>
-                    <td><a href="/home">Home</a>
-                    </td>
+                    <td><a href="/test/">Home</a></td>
                 </tr>
             </table>
         </form:form>

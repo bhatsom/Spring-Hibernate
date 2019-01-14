@@ -1,10 +1,9 @@
-package com.somnath.spring.dao;
+package com.somnath.spring.orm.dao;
 
-import com.somnath.spring.model.Employee;
+import com.somnath.spring.model.entity.Employee;
 
 import java.util.List;
  
-
 public interface EmployeeDao {
  
     void saveEmployee(Employee employee);

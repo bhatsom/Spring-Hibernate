@@ -1,15 +1,18 @@
-package com.somnath.spring.dao;
+package com.somnath.spring.orm.dao;
 
 import java.util.List;
 
-import com.somnath.spring.model.Employee;
+import com.somnath.spring.model.entity.Employee;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
- 
+
+import javax.transaction.Transactional;
+
 
 @Repository("employeeDao")
+@Transactional
 public class EmployeeDaoImpl extends AbstractDao implements EmployeeDao{
  
     public void saveEmployee(Employee employee) {
